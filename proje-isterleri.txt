@@ -1,0 +1,63 @@
+DailyO proje ister dosyası 
+
+
+1- Proje süresince kullanılacak dil ve teknolojiler aşağıdaki gibidir;
+html, css, vite.js ve jira.
+
+2- Proje kaynak yönetimi git github üzerinden sağlanacaktır.
+
+3- Proje dosyasında bulunan yapılara ek yapılar açılmadan önce ekip lideri bilgilendirilmelidir.
+
+
+4- Projede bulunan img dosyasına eklenecek resimler (varsa) 1x ve 2x seçenekleriyle yüklenecek ve retina ekran uyumluluğu sağlanacaktır
+
+5- Jira ile yönetilecek sprint sürecinde her sprint 1 haftalık maddeler halinde olacaktır.
+
+
+6- Main branchine kod çıkma işlemi sadece ekip lideri tarafından yapılacaktır.
+
+
+7- Proje geliştirme sürecinde kullanılacak API’lar dokuman sonuna eklenecektir.
+
+
+8- JS kodlarının yazımı sırasında innerHTML yapısı gerekmedikçe kullanılmayacak bütün işlemler element işlemleriyle yapılacaktır.
+
+
+9- bölümlere ait html kodları yazılırken head body etiketleri değil sadece alana ait div section tagleri kullanılacaktır.
+
+10- html class ve id isimleri yapılan bölüm adıyla başlayacak uzun isimler “-” ile ayrılacaktır (örn = zodiac-pop-up)
+
+11 - css kodlarında öncelik mobile first yaklaşımı kullanılacak kauçuk düzen 375 px altı mobil düzen 375px - 768px aralığında tablet düzeni 768px - 1280px aralığında bilgisayar düzeni 1280px ve üzeri olacak şekilde yazılacak. Kaynak tasarım değerleri style.css dosyasında bulunan root değerlerden çekilecek. genişlik yükseklik ve diğer değerler statik verilmeyecektir.
+
+12 - navbar tasarımında yönlendirme butonları bağlantı olacak ve etkileşimler doğru çalışacak 404 hatası olmayacak
+
+
+
+
+
+Projede kullanılacak API’ler ;
+Hava durumu : OpenWeatherMap
+Günün yemeği ve yemek tarifleri: TheMealDB
+Motivasyon = ZenQuotes
+Döviz kurları = ExchangeRate.host
+Haberler = NewsData.io
+Burçlar = AztroAPI
+Kripto kurları = CoinGecko API 
+
+
+
+
+
+
+
+Proje süresi 5 hafta olacaktır 
+
+Ekip üyeleri;
+
+Koordinatör = Muhammet Burak ALTUN
+team leader = Berkan YILMAZ
+Scrum Master = Furkan KARADERELİ
+Proje Yöneticisi = Nur Aleyna, Merve DELİBAŞOĞLU
+Ekip üyeleri = Fatmanur ERDOĞAN, Ahmet Talha KAPLAN, Meryem ASLAN
+
+
