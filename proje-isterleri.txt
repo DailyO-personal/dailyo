@@ -36,10 +36,20 @@ html, css, vite.js ve jira.
 
 
 Projede kullanılacak API’ler ;
-Hava durumu : OpenWeatherMap
-Günün yemeği ve yemek tarifleri: TheMealDB
-Motivasyon = ZenQuotes
-Döviz kurları = ExchangeRate.host
+Hava durumu : OpenWeatherMap  api key = 79411968ead73a5c2821bf9f3fc40490
+Günün yemeği ve yemek tarifleri: TheMealDB api isteği : rastgele tek tarif = www.themealdb.com/api/json/v1/1/random.php
+
+Tüm yemek kategorilerini listele
+www.themealdb.com/api/json/v1/1/categories.php
+
+Tüm Kategorileri, Alanı, Malzemeleri Listele
+www.themealdb.com/api/json/v1/1/list.php?c=list
+www.themealdb.com/api/json/v1/1/list.php?a=list
+www.themealdb.com/api/json/v1/1/list.php?i=list
+
+
+Motivasyon = ZenQuotes   post api = https://zenquotes.io/api/quotes/
+Döviz kurları = ExchangeRate.host =
 Haberler = NewsData.io
 Burçlar = AztroAPI
 Kripto kurları = CoinGecko API 
