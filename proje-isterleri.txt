@@ -31,7 +31,7 @@ html, css, vite.js ve jira.
 
 12 - navbar tasarımında yönlendirme butonları bağlantı olacak ve etkileşimler doğru çalışacak 404 hatası olmayacak
 
-
+13- yazılan kodların yanında yapılan işlemler açıklanacak
 
 
 
