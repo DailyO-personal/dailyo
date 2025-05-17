@@ -9,90 +9,42 @@ body {
 }
 
 nav {
-  background-color: #333;
-  color: white;
+  background-color: #222;
+  padding: 10px;
+  overflow-x: auto; /* Ekran dar ise yatay kaydırma */
 }
 
 .header-all {
   display: flex;
-  flex-direction: column;
-}
-
-/* HEADER TOP */
-.header-top {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-}
-
-.header-top h1 {
-  font-size: 1.5rem;
-}
-
-.header-top div {
-  display: flex;
   gap: 15px;
+  white-space: nowrap; /* Her şey tek satırda */
 }
 
-.header-top i {
-  font-size: 1.4rem;
-  cursor: pointer;
+h1 {
+  color: white;
+  font-size: 20px;
+  flex-shrink: 0;
 }
 
-/* HEADER BOTTOM */
-.header-bottom {
-  background-color: #444;
-  padding: 10px 0;
-}
-
-.header-bottom ul {
+ul {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 5px;
+  gap: 10px;
+  list-style: none;
+  flex-shrink: 0;
 }
 
-.header-bottom li a {
+ul li a {
   color: white;
   text-decoration: none;
-  padding: 6px 12px;
-  font-size: 0.95rem;
-  white-space: nowrap;
-  border-radius: 4px;
+  font-size: 14px;
 }
 
-.header-bottom li a:hover {
-  background-color: #6f6969;
+i {
+  color: white;
+  flex-shrink: 0;
 }
 
-/* RESPONSIVE MOBİLe */
-@media (max-width: 768px) {
-  .header-top {
-    padding: 10px;
-  }
-
-  .header-top h1 {
-    font-size: 1.2rem;
-  }
-
-  .header-top div {
-    gap: 10px;
-  }
-
-  .header-top i {
-    font-size: 1.2rem;
-  }
-
-  .header-bottom ul {
-    gap: 10px;
-    padding: 5px;
-  }
-
-  .header-bottom li a {
-    font-size: 0.9rem;
-  }
+input[type="text"] {
+  padding: 5px;
 }
