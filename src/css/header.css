@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+.header-all {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER TOP */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-top h1 {
+  font-size: 1.5rem;
+}
+
+.header-top div {
+  display: flex;
+  gap: 15px;
+}
+
+.header-top i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* HEADER BOTTOM */
+.header-bottom {
+  background-color: #444;
+  padding: 10px 0;
+}
+
+.header-bottom ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+}
+
+.header-bottom li a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.header-bottom li a:hover {
+  background-color: #6f6969;
+}
+
+/* RESPONSIVE MOBİLe */
+@media (max-width: 768px) {
+  .header-top {
+    padding: 10px;
+  }
+
+  .header-top h1 {
+    font-size: 1.2rem;
+  }
+
+  .header-top div {
+    gap: 10px;
+  }
+
+  .header-top i {
+    font-size: 1.2rem;
+  }
+
+  .header-bottom ul {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .header-bottom li a {
+    font-size: 0.9rem;
+  }
+}
