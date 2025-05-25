@@ -5,46 +5,72 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-nav {
+.header-nav {
   background-color: #222;
   padding: 10px;
-  overflow-x: auto; /* Ekran dar ise yatay kaydırma */
+  overflow-x: hidden;
 }
 
 .header-all {
   display: flex;
   align-items: center;
-  gap: 15px;
-  white-space: nowrap; /* Her şey tek satırda */
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-h1 {
+.header-h1 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   flex-shrink: 0;
 }
 
-ul {
+#nav-links {
   display: flex;
   gap: 10px;
   list-style: none;
   flex-shrink: 0;
 }
 
-ul li a {
+#nav-links li a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 20px;
 }
 
-i {
-  color: white;
-  flex-shrink: 0;
-}
-
-input[type="text"] {
+.header-input {
   padding: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-input {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

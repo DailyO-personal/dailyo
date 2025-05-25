@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Responsive Nav</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -12,19 +11,19 @@
     <link rel="stylesheet" href="../css/header.css" />
   </head>
 
-  <nav>
-    <div class="header-all">
-      <h1>DAILYO</h1>
+  <body>
+    <nav class="header-nav">
+      <div class="header-all">
+        <h1 class="header-h1">DAILYO</h1>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Weather</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
+        <i class="fa-solid fa-bars menu-toggle" id="menu-toggle"></i>
 
-      <i class="fa-solid fa-arrow-right"></i>
-      <input type="text" placeholder="Search..." />
-    </div>
-  </nav>
+        <ul id="nav-links"></ul>
+
+        <input class="header-input" type="text" placeholder="Search..." />
+      </div>
+    </nav>
+
+    <script src="../js/header.js"></script>
+  </body>
 </html>
