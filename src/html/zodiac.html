@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/zodiac.css" />
+    <title>Zodiac</title>
+  </head>
+  <body>
+    <!-- Nav Section-->
+
+    <header class="zodiac-hero">
+      <h1 class="hero-heading">Yıldızların Sırrını Keşfet</h1>
+      <p class="hero-text">
+        Burçlar, gezegenlerin diliyle yazılmış kozmik bir rehberdir. Kendi
+        burcunu öğren, günlük yorumlarını takip et ve evrenin sana
+        fısıldadıklarına kulak ver. Astrolojinin büyülü dünyasına ilk adımını
+        at!
+      </p>
+    </header>
+
+    <section class="filter-section">
+      <div class="filter-container">
+        <div class="filter-group">
+          <select class="filter-select">
+            <option value="">Tarih Aralığı Seç</option>
+            <option value="21 Mart - 19 Nisan">21 Mart - 19 Nisan</option>
+            <option value="20 Nisan - 20 Mayıs">20 Nisan - 20 Mayıs</option>
+            <option value="21 Mayıs - 20 Haziran">21 Mayıs - 20 Haziran</option>
+            <option value="21 Haziran - 22 Temmuz">
+              21 Haziran - 22 Temmuz
+            </option>
+            <option value="23 Temmuz - 22 Ağustos">
+              23 Temmuz - 22 Ağustos
+            </option>
+            <option value="23 Ağustos - 22 Eylül">23 Ağustos - 22 Eylül</option>
+            <option value="23 Eylül - 22 Ekim">23 Eylül - 22 Ekim</option>
+            <option value="23 Ekim - 21 Kasım">23 Ekim - 21 Kasım</option>
+            <option value="22 Kasım - 21 Aralık">22 Kasım - 21 Aralık</option>
+            <option value="22 Aralık - 19 Ocak">22 Aralık - 19 Ocak</option>
+            <option value="20 Ocak - 18 Şubat">20 Ocak - 18 Şubat</option>
+            <option value="19 Şubat - 20 Mart">19 Şubat - 20 Mart</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <select class="filter-select">
+            <option value="">Burç Ayı Seç</option>
+            <option value="1">Ocak</option>
+            <option value="2">Şubat</option>
+            <option value="3">Mart</option>
+            <option value="4">Nisan</option>
+            <option value="5">Mayıs</option>
+            <option value="6">Haziran</option>
+            <option value="7">Temmuz</option>
+            <option value="8">Ağustos</option>
+            <option value="9">Eylül</option>
+            <option value="10">Ekim</option>
+            <option value="11">Kasım</option>
+            <option value="12">Aralık</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <input type="time" class="filter-select" placeholder="Burç Saati" />
+        </div>
+        <button class="filter-button">Filtrele</button>
+      </div>
+    </section>
+
+    <section class="result-section">
+      <div class="result-card">
+        <h3 class="result-title">Burcunuz</h3>
+        <h4 class="result-zodiac">Aslan</h4>
+        <img src="../img/zodiac-img/aslan.png" alt="Zodiac Sign Logo" />
+      </div>
+      <div class="result-card">
+        <h3 class="result-title">Yükselen</h3>
+        <h4 class="result-zodiac">Kova</h4>
+        <img src="../img/zodiac-img/kova.png" alt="Zodiac Sign Logo" />
+      </div>
+    </section>
+
+    <section class="zodiac-buttons">
+      <div class="button-row">
+        <button class="zodiac-button" title="Koç">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M5 3a7 7 0 0 1 7 7v11M19 3a7 7 0 0 0-7 7" /></svg>
+        </button>
+        <button class="zodiac-button" title="Boğa">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><circle cx="12" cy="12" r="5"/><path d="M5 3a5 5 0 0 0 5 5h4a5 5 0 0 0 5-5" /></svg>
+        </button>
+        <button class="zodiac-button" title="İkizler">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M8 3v18M16 3v18M3 5h18M3 19h18" /></svg>
+        </button>
+        <button class="zodiac-button" title="Yengeç">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M2 12a6 6 0 0 1 12 0 6 6 0 0 0 12 0"/><circle cx="6" cy="12" r="1"/><circle cx="18" cy="12" r="1"/></svg>
+        </button>
+        <button class="zodiac-button" title="Aslan">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M17 3a3 3 0 0 0-3 3 3 3 0 0 1-6 0 5 5 0 0 0-5 5 5 5 0 0 0 5 5h6a3 3 0 1 1 0 6" /></svg>
+        </button>
+        <button class="zodiac-button" title="Başak">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M4 4v16M4 4a4 4 0 0 1 8 0v12a4 4 0 1 0 8 0V4M12 12h4" /></svg>
+        </button>
+      </div>
+    
+      <div class="button-row">
+        <button class="zodiac-button" title="Terazi">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M12 3a6 6 0 0 1 6 6H6a6 6 0 0 1 6-6zM3 21h18M7 9l-4 6h8l-4-6zM17 9l-4 6h8l-4-6z" /></svg>
+        </button>
+        <button class="zodiac-button" title="Akrep">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M4 4v9a4 4 0 0 0 8 0V4M12 4v9a4 4 0 1 0 8 0V4M16 17l2 2 2-2" /></svg>
+        </button>
+        <button class="zodiac-button" title="Yay">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M22 2 12 12M22 2l-7 0M22 2v7M5 11a7 7 0 0 0 7 7" /></svg>
+        </button>
+        <button class="zodiac-button" title="Oğlak">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M4 4v10a4 4 0 1 0 8 0V4M16 16a4 4 0 1 1-8 0" /></svg>
+        </button>
+        <button class="zodiac-button" title="Kova">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M2 12s1.5-2 4-2 4 2 4 2-1.5 2-4 2-4-2-4-2zM14 12s1.5-2 4-2 4 2 4 2-1.5 2-4 2-4-2-4-2z" /></svg>
+        </button>
+        <button class="zodiac-button" title="Balık">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zodiac-icon"><path d="M3 12s3-4 6-4 6 4 6 4-3 4-6 4-6-4-6-4zM15 4v16" /></svg>
+        </button>
+      </div>
+    </section>    
+
+    <div class="modal-container">
+      <section class="zodiac-modal">
+        <button class="modal-close">×</button>
+        <img src="../img/zodiac-img/aslan.png" alt="Zodiac Sign Logo" />
+        <h2 class="pop-up-title">Burçların Günlük Yorumları</h2>
+        <div class="pop-up-zodiac-features">
+          <h4 class="pop-up-features-title">Aslan Burcu Özellikleri</h4>
+          <div class="features-list">
+            <ul>
+              <li>Burç Özelliği</li>
+              <li>Burç Özelliği</li>
+              <li>Burç Özelliği</li>
+              <li>Burç Özelliği</li>
+              <li>Burç Özelliği</li>
+              <li>Burç Özelliği</li>
+            </ul>
+          </div>
+        </div>
+  
+        <section class="ascendants-section">
+          <div class="ascendants-row">
+            <button class="ascendant-button">Koç Yüksel</button>
+            <button class="ascendant-button">Boğa Yüksel</button>
+            <button class="ascendant-button">İkizler Yüksel</button>
+            <button class="ascendant-button">Yengeç Yüksel</button>
+            <button class="ascendant-button">Aslan Yüksel</button>
+            <button class="ascendant-button">Başak Yüksel</button>
+            <button class="ascendant-button">Terazi Yüksel</button>
+            <button class="ascendant-button">Akrep Yüksel</button>
+            <button class="ascendant-button">Yay Yüksel</button>
+            <button class="ascendant-button">Oğlak Yüksel</button>
+            <button class="ascendant-button">Kova Yüksel</button>
+            <button class="ascendant-button">Balık Yüksel</button>
+          </div>
+  
+          <div class="pop-up-ascendant-features">
+            <h4 class="pop-up-features-title">Aslan Yükseleni Özellikleri</h4>
+            <div class="features-list">
+              <ul>
+                <li>Yükselen Özellik</li>
+                <li>Yükselen Özellik</li>
+                <li>Yükselen Özellik</li>
+                <li>Yükselen Özellik</li>
+                <li>Yükselen Özellik</li>
+                <li>Yükselen Özellik</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+  </body>
+</html>
