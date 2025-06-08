@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto & Economic Dashboard</title>
+    <link rel="stylesheet" href="../css/cryptoAndExcange.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      // Check for saved theme preference or default to 'light'
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme") || "light"
+      );
+    </script>
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
+    <main class="dashboard">
+      <section class="dashboard-section crypto-section">
+        <h2>Cryptocurrency Market</h2>
+        <div class="crypto-container" id="crypto-container">
+          <div class="loading">Loading cryptocurrency data...</div>
+        </div>
+      </section>
+
+      <section class="dashboard-section currency-section">
+        <h2>Currency Exchange Rates</h2>
+        <div class="currency-container">
+          <div class="currency-converter">
+            <h3>Currency Converter</h3>
+            <div class="converter-inputs">
+              <div class="input-group">
+                <input type="number" id="amount" value="1" min="0" />
+                <select id="from-currency">
+                  <option value="USD" selected>USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="TRY">TRY</option>
+                </select>
+              </div>
+              <div class="swap-icon">
+                <i class="fas fa-exchange-alt" id="swap-currencies"></i>
+              </div>
+              <div class="input-group">
+                <input type="number" id="result" readonly />
+                <select id="to-currency">
+                  <option value="USD">USD</option>
+                  <option value="EUR" selected>EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="TRY">TRY</option>
+                </select>
+              </div>
+            </div>
+            <button id="convert-btn">Convert</button>
+          </div>
+          <div class="popular-rates" id="popular-rates">
+            <h3>Popular Exchange Rates</h3>
+            <div class="loading">Loading exchange rates...</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-section news-section">
+        <h2>Economic News</h2>
+        <div class="news-container" id="news-container">
+          <div class="loading">Loading economic news...</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for news articles -->
+    <div id="news-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <h2 id="modal-title"></h2>
+          <div id="modal-source-date"></div>
+        </div>
+        <div class="modal-body">
+          <img id="modal-image" src="" alt="" />
+          <div id="modal-description"></div>
+        </div>
+        <div class="modal-footer">
+          <a id="modal-link" href="#" target="_blank">Read full article</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/cryptoAndExcange.js"></script>
+  </body>
+</html>
