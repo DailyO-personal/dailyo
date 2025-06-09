@@ -22,7 +22,6 @@ body {
 }
 
 .header-h1 {
-  color: white;
   font-size: 25px;
   flex-shrink: 0;
 }
@@ -48,9 +47,73 @@ body {
 
 .menu-toggle {
   display: none;
-  color: white;
+
   font-size: 20px;
   cursor: pointer;
+}
+
+:root {
+  --bg-color: #222;
+  --text-color: white;
+  --input-bg: #333;
+}
+
+body.light-mode {
+  --bg-color: #f5ebeb;
+  --text-color: #050505;
+  --input-bg: #e4d9d9;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header-nav {
+  background-color: var(--bg-color);
+}
+
+#nav-links li a {
+  color: var(--text-color);
+}
+
+.header-input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+.header-search-theme {
+  display: flex;
+  align-items: center;
+  background-color: var(--input-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.header-search-theme .header-input {
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: var(--text-color);
+  outline: none;
+  flex: 1;
+}
+
+.header-search-theme .theme-btn {
+  padding: 0 10px;
+  font-size: 20px;
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -69,8 +132,12 @@ body {
     display: block;
   }
 
-  .header-input {
+  .header-search-theme {
     width: 100%;
     margin-top: 10px;
+  }
+
+  .header-input {
+    width: 100%;
   }
 }
